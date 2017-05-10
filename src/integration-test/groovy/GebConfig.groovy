@@ -9,16 +9,7 @@ import geb.report.ReportState
 import geb.report.Reporter
 import geb.report.ReportingListener
 
-//System.setProperty 'webdriver.chrome.driver', 'c:/dev/chromedriver.exe'
-//System.setProperty 'phantomjs.binary.path', ''
-
-//driver = { new ChromeDriver() }
-driver = { new PhantomJSDriver(new DesiredCapabilities()) }
-
-reportsDir = new File('build/geb-reports')
-baseUrl = 'http://localhost:8238/'
-quitCachedDriverOnShutdown = false
-
+// Refer to http://guides.grails.org/grails-geb-multiple-browsers/guide/index.html for example on how to run the test.
 environments {
 
 	// run as 'grails -Dgeb.env=phantomjs test-app'

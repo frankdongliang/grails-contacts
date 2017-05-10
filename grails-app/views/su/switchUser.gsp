@@ -30,18 +30,17 @@
 			</p>
 		</g:if>
 
-		<g:form controller='j_spring_security_switch_user'>
+		<form action='${request.contextPath}/login/impersonate' method='POST'>
 			<table>
 				<tr>
 					<td>User:</td>
-					<td><input type='text' name='j_username'></td>
+					<td><input type='text' name='username'></td>
 				</tr>
 				<tr>
 					<td colspan='2'><input name="switch" type="submit" value="Switch to User"></td>
 				</tr>
 			</table>
-		</g:form>
-
+		</form>
 	</div>
 </div>
 </body>

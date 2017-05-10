@@ -21,7 +21,7 @@
 		</g:if>
 
 		<g:set var='auth' value='${SecurityContextHolder.context.authentication}'/>
-		<g:form controller='j_spring_security_exit_user'>
+			<form action='${request.contextPath}/logout/impersonate' method='POST'>
 			<table>
 				<tr>
 					<td>Current User:</td>
@@ -31,7 +31,7 @@
 					<td colspan='2'><input name="exit" type="submit" value="Exit"></td>
 				</tr>
 			</table>
-		</g:form>
+		</form>
 
 	</div>
 </div>
